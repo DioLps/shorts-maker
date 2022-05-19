@@ -1,16 +1,7 @@
 {
-  "name": "ts-cli-boilerplate",
-  "version": "0.13.4",
-  "description": "TypeScript CLI boilerplate",
-  "author": "Lycolia",
+  "name": "@saikou/shorts-maker",
+  "version": "0.0.1",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Lycolia/ts-cli-boilerplate"
-  },
-  "bin": {
-    "your_command_name_here": "./dist/index.js"
-  },
   "scripts": {
     "start": "npm run build-ts && node dist/index.js",
     "dev": "npm run build-ts && node --inspect-brk dist/index.js",

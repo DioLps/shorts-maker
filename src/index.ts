@@ -21,7 +21,7 @@ const start = async () => {
   state.sentences = summaries.map((summary, index) => {
     return {
       text: summary,
-      keywoard: `${state.searchTerm} ${categories[index]}`,
+      keywoard: categories[index] ? `${state.searchTerm} ${categories[index]}` : '',
       images: '',
     }
   });
