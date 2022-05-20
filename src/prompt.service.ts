@@ -1,6 +1,6 @@
 import { question, keyInSelect } from 'readline-sync';
 
-export class Prompt {
+export class PromptService {
   static getSearchTermFromPrompt(): string {
     return question('Type a Wikipedia search term: ');
   }
@@ -10,6 +10,7 @@ export class Prompt {
       'Who is ',
       'What is ',
       'The history of ',
+      '',
     ]
   ): string {
     const selectedIndex = keyInSelect(prefixes, 'Select a prefix: ');

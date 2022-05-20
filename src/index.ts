@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
-import { Prompt } from './prompt';
+import { PromptService } from './prompt.service';
 import { State } from './state.model';
 import { WikiService } from './wiki.service';
 // import { writeFile } from 'fs';
 
 const start = async () => {
   const state: State = {
-    searchTerm: Prompt.getSearchTermFromPrompt(),
-    prefix: Prompt.getSearchPrefixFromPrompt()
+    searchTerm: PromptService.getSearchTermFromPrompt(),
+    prefix: PromptService.getSearchPrefixFromPrompt()
   };
 
   const wikiService = new WikiService(state.searchTerm);
